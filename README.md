@@ -1,6 +1,6 @@
 # Projeto Utilizando a API da Marvel
 
-## Este é um projeto que utiliza a API da Marvel para exibir informações sobre seus personagens, quadrinhos e muito mais. A API da Marvel oferece acesso a uma vasta quantidade de dados relacionados ao universo dos quadrinhos da Marvel, permitindo que os desenvolvedores criem aplicativos interessantes e envolventes.
+## Este é um projeto que utiliza a API da Marvel para exibir informações sobre seus personagens, quadrinhos e muito mais.
 
 # Funcionalidades
 

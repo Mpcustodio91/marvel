@@ -1,3 +1,5 @@
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import { Quasar, Notify } from 'quasar'
 import quasarLang from 'quasar/lang/pt-BR'
 
@@ -16,9 +18,6 @@ import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'
 import '@quasar/extras/ionicons-v4/ionicons-v4.css'
 
 import 'quasar/src/css/index.sass'
-
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
