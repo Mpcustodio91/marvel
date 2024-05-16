@@ -117,7 +117,7 @@ fetchComicsData()
     </div>
     <section class="col-12 row">
       <div
-        class="col-sm-4 col-md-3 col-lg-3 col-xs-6 q-pa-sm q-mt-lg"
+        class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xs-6 q-pa-sm q-mt-lg"
         v-for="comic in filteredComics"
         :key="comic.id"
       >
@@ -133,7 +133,7 @@ fetchComicsData()
             <q-btn
               color="secondary"
               icon="shopping_cart"
-              class="absolute text-white comic-title"
+              class="absolute text-white comic-cart"
               size="md"
               @click="addToCartAndShowToast(comic)"
               round
@@ -144,7 +144,7 @@ fetchComicsData()
                   :label="comic.title"
                   flat
                   color="red"
-                  class="full-width q-mt-md text-caption text-bold"
+                  class="full-width q-mt-md comic-title text-bold"
                   :class="[$q.dark.isActive ? 'text-white' : 'text-black']"
                   @click="setComic(comic)"
                 />
@@ -183,12 +183,15 @@ fetchComicsData()
   width: 100%;
   max-width: 250px;
 }
-.comic-title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.comic-cart {
   top: 0;
   right: 12px;
   transform: translateY(-50%);
+}
+
+.comic-title {
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  overflow: hidden; /* Oculta qualquer conteúdo que exceda a largura do contêiner */
+  text-overflow: ellipsis;
 }
 </style>
