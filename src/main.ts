@@ -27,13 +27,12 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(Quasar, {
-  plugins: { Notify }, // import Quasar plugins and add here
+  plugins: { Notify },
   lang: quasarLang,
   config: {
     brand: {
       primary: '#e46262',
       secondary: '#0071BC'
-      // ... or all other brand colors
     }
   }
 })
